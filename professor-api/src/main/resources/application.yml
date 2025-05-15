@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: professors
+  data:
+    mongodb:
+      uri: ${SPRING_DATA_MONGODB_URI}
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+    com:
+      mongodb: DEBUG
